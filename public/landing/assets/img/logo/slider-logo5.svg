@@ -1,0 +1,14 @@
+<svg width="160" height="32" viewBox="0 0 160 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hard hat (vertically centered) -->
+  <path d="M6 19c0-4 4-7 8-7s8 3 8 7" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M4 19h20" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Text -->
+  <text x="38" y="24"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="19"
+        font-weight="700"
+        fill="#FFFFFF">
+    Construction
+  </text>
+</svg>
