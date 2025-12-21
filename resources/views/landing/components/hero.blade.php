@@ -47,9 +47,9 @@
                   <div class="single-slider">
                     <img src="{{ asset('landing/assets/img/logo/slider-logo1.svg') }}" alt="">
                   </div>
-                  <div class="single-slider">
+                  <!-- <div class="single-slider">
                     <img src="{{ asset('landing/assets/img/logo/slider-logo2.svg') }}" alt="">
-                  </div>
+                  </div> -->
                   <div class="single-slider" style="text-align: right;">
                     <img src="{{ asset('landing/assets/img/logo/slider-logo3.svg') }}" alt="">
                   </div>
