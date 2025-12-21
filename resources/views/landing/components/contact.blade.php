@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="heading">
                                         <p data-i18n="contact_box_two_title">Send me Mail</p>
-                                        <a href="mailto:recrute@hotmail.com">recrute@hotmail.com</a>
+                                        <a href="mailto:info@staffboostagency.com">info@staffboostagency.com</a>
                                     </div>
                                 </div>
                             </div>
