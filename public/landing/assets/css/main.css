@@ -8450,8 +8450,9 @@ body.body {
   .hero-area1 .hero1-images {
     margin-right: 0;
   }
-  .heading1-w {
+  .contact1 .heading1-w {
     margin-bottom: 30px;
+    padding-right: 0;
   }
 }
 .hero-area1 .hero1-images .image2 {
