@@ -23,7 +23,7 @@
     <meta property="og:title" content="{{ request('lang') === 'sr' ? 'Agencija Staff Boost | Pouzdana globalna rešenja za radnu snagu' : 'Staff Boost Agency | Reliable Global Workforce Solutions' }}">
     <meta property="og:description" content="{{ request('lang') === 'sr' ? 'Pouzdano globalno zapošljavanje u građevinarstvu, transportu, dostavi, maloprodaji, skladištima i drugim industrijama. Vize i onboarding od početka do kraja.' : 'Reliable global staffing across construction, transportation, delivery, retail, warehouses and more. Visa and onboarding handled end‑to‑end.' }}">
     <meta property="og:url" content="{{ request('lang') ? url()->current() . '?lang=' . request('lang') : url()->current() }}">
-    <meta property="og:image" content="{{ asset('landing/assets/img/logo/titel1.png') }}">
+    <meta property="og:image" content="{{ asset('landing/assets/img/logo/header-logo1.png') }}">
     <meta property="og:image:alt" content="Staff Boost Agency logo">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ request('lang') === 'sr' ? 'Agencija Staff Boost | Pouzdana globalna rešenja za radnu snagu' : 'Staff Boost Agency | Reliable Global Workforce Solutions' }}">
     <meta name="twitter:description" content="{{ request('lang') === 'sr' ? 'Pouzdano globalno zapošljavanje u građevinarstvu, transportu, dostavi, maloprodaji, skladištima i drugim industrijama. Vize i onboarding od početka do kraja.' : 'Reliable global staffing across construction, transportation, delivery, retail, warehouses and more. Visa and onboarding handled end‑to‑end.' }}">
-    <meta name="twitter:image" content="{{ asset('landing/assets/img/logo/titel1.png') }}">
+    <meta name="twitter:image" content="{{ asset('landing/assets/img/logo/header-logo1.png') }}">
 
     <!-- PWA / UI -->
     <meta name="theme-color" content="#0a0a0a">
@@ -46,7 +46,7 @@
       "@@type": "Organization",
       "name": "Staff Boost Agency",
       "url": "{{ url('/') }}",
-      "logo": "{{ asset('landing/assets/img/logo/titel1.png') }}"
+      "logo": "{{ asset('landing/assets/img/logo/header-logo1.png') }}"
     }
     </script>
     <script type="application/ld+json">
@@ -69,7 +69,7 @@
       "@@type": "EmploymentAgency",
       "name": "Staff Boost Agency",
       "url": "{{ url('/') }}",
-      "logo": "{{ asset('landing/assets/img/logo/titel1.png') }}",
+      "logo": "{{ asset('landing/assets/img/logo/header-logo1.png') }}",
       "description": "{{ request('lang') === 'sr' ? 'Agencija za zapošljavanje koja povezuje kompanije sa pouzdanim međunarodnim radnicima i pruža kompletnu podršku za vize i onboarding.' : 'Employment agency connecting companies with reliable international workers, providing full visa and onboarding support.' }}",
       "areaServed": ["EU", "UK", "Global"],
       "inLanguage": "{{ request('lang', 'en') }}"

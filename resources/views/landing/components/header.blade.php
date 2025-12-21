@@ -48,7 +48,7 @@
         <div class="col-12">
             <div class="mobile-header-elements">
                 <div class="mobile-logo">
-                    <a href="https://html.vikinglab.agency/recrute/index1.html"><img src="{{ asset('landing/assets/img/logo/header-logo1.png') }}" alt="" style="max-width: 160px;"></a>
+                    <a href="#"><img src="{{ asset('landing/assets/img/logo/header-logo1.png') }}" alt="" style="max-width: 160px;"></a>
                 </div>
                 <div class="mobile-nav-icon">
                     <i class="fa-solid fa-bars"></i>
