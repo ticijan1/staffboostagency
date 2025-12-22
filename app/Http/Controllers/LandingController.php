@@ -49,6 +49,7 @@ class LandingController extends Controller
 
         Mail::send([], [], function ($message) use ($firstName, $lastName, $email, $phone, $subject, $messageText) {
             $message->to('staffboostagency@gmail.com')
+                ->from('info@staffboostagency.com', 'Staff Boost Agency')
                 ->subject($subject)
                 ->html(
                     "First Name: {$firstName}<br>" .
@@ -98,6 +99,7 @@ class LandingController extends Controller
 
         Mail::send([], [], function ($message) use ($firstName, $lastName, $email, $phone, $country, $position, $messageText) {
             $message->to('staffboostagency@gmail.com')
+                ->from('info@staffboostagency.com', 'Staff Boost Agency')
                 ->subject('New Employment Application')
                 ->html(
                     "First Name: {$firstName}<br>" .
