@@ -20,7 +20,7 @@
                                 <img src="{{ asset('landing/assets/img/icons/choose1-icon1.png') }}" alt="">
                             </div>
                             <div class="heading1">
-                                <h3><span class="counter">1200</span>+</h3>
+                                <h3><span class="counter">100</span>+</h3>
                                 <div class="space10"></div>
                                 <p data-i18n="about_box_two">Workers Placed</p>
                             </div>
