@@ -16,8 +16,8 @@
                                         <img src="{{ asset('landing/assets/img/icons/contact-icon1.png') }}" alt="">
                                     </div>
                                     <div class="heading">
-                                        <p data-i18n="contact_box_one_title">Gives us a Call</p>
-                                        <a href="tel:123-456-7890">123-456-7890</a>
+                                        <p data-i18n="contact_box_one_title">Contact us</p>
+                                        <a data-i18n="contact_box_one_link" href="https://wa.me/35677771169?text=Hello%20Staff%20Boost%20Agency" target="_blank" rel="noopener" aria-label="Open WhatsApp chat">Click here - WhatsApp</a>
                                     </div>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
                                         <img src="{{ asset('landing/assets/img/icons/contact-icon2.png') }}" alt="">
                                     </div>
                                     <div class="heading">
-                                        <p data-i18n="contact_box_two_title">Send me Mail</p>
+                                        <p data-i18n="contact_box_two_title">Send us Mail</p>
                                         <a href="mailto:info@staffboostagency.com">info@staffboostagency.com</a>
                                     </div>
                                 </div>
