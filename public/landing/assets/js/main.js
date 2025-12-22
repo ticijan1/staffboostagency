@@ -604,12 +604,12 @@
     $(window).on("load", function (event) {
       setTimeout(function () {
         // Use explicit hide to ensure preloader is not visible after load
-        $(".preloader").fadeToggle();
+        togglePreloader(false);
       }, 500);
     });
 
 
-    	/* Text Effect Animation */
+    /* Text Effect Animation */
 	if ($('.text-anime-style-1').length) {
 		let staggerAmount 	= 0.05,
 			translateXValue = 0,

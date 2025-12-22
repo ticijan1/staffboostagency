@@ -161,7 +161,7 @@
         <script src="{{ asset('landing/assets/js/text-animation.js') }}"></script>
         <script src="{{ asset('landing/assets/js/jquery.lineProgressbar.js') }}"></script>
         <script src="{{ asset('landing/assets/js/tilt.jquery.js') }}"></script>
-        <script src="{{ asset('landing/assets/js/main.js') }}"></script>
+        <script src="{{ asset('landing/assets/js/main.js') }}?cacheVersion=1.0"></script>
         <script>
         function setLanguage(lang) {
             document.querySelectorAll('[data-i18n]').forEach(function(el) {
