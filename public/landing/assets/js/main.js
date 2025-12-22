@@ -806,6 +806,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(form);
         // Include current language for backend localization
         formData.append('lang', getCurrentLang());
+        // Show preloader while request is running
+        if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
         fetch(form.action, {
             method: 'POST',
             headers: {
@@ -835,6 +837,10 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(() => {
             if (failMsg) { failMsg.innerText = msg('genericError'); failMsg.style.display = 'block'; }
+        })
+        .finally(() => {
+            // Hide preloader when request completes
+            if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
         });
     });
 
@@ -906,6 +912,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(employmentForm);
             // Include current language for backend localization
             formData.append('lang', getCurrentLang());
+            // Show preloader while request is running
+            if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
             fetch(employmentForm.action, {
                 method: 'POST',
                 headers: {
@@ -955,6 +963,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     failMsg.innerText = msg('genericError');
                     failMsg.style.display = 'block';
                 }
+            })
+            .finally(() => {
+                // Hide preloader when request completes
+                if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
             });
         });
     }

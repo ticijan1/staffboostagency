@@ -52,6 +52,7 @@ class LandingController extends Controller
                 ->from('info@staffboostagency.com', 'Staff Boost Agency')
                 ->subject($subject)
                 ->html(
+                    "<strong>Source:</strong> Contact Form<br><br>" .
                     "First Name: {$firstName}<br>" .
                     "Last Name: {$lastName}<br>" .
                     "Email: {$email}<br>" .
@@ -102,6 +103,7 @@ class LandingController extends Controller
                 ->from('info@staffboostagency.com', 'Staff Boost Agency')
                 ->subject('New Employment Application')
                 ->html(
+                    "<strong>Source:</strong> Employment Form<br><br>" .
                     "First Name: {$firstName}<br>" .
                     "Last Name: {$lastName}<br>" .
                     "Email: {$email}<br>" .
