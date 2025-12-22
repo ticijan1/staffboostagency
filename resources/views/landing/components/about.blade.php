@@ -31,7 +31,7 @@
                                 <img src="{{ asset('landing/assets/img/icons/choose1-icon3.png') }}" alt="">
                             </div>
                             <div class="heading1">
-                                <h3><span class="counter">15</span>+</h3>
+                                <h3><span class="counter">3</span>+</h3>
                                 <div class="space10"></div>
                                 <p data-i18n="about_box_three">Partner Countries</p>
                             </div>
