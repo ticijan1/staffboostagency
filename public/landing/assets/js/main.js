@@ -603,6 +603,7 @@
     //preloader
     $(window).on("load", function (event) {
       setTimeout(function () {
+        // Use explicit hide to ensure preloader is not visible after load
         $(".preloader").fadeToggle();
       }, 500);
     });
@@ -687,6 +688,52 @@
 
 })(jQuery);
 
+// Safe preloader toggler that works with or without jQuery
+function togglePreloader(show) {
+  try {
+    var el = document.querySelector('.preloader');
+    if (!el) return;
+    if (typeof show === 'boolean') {
+      if (show) {
+        // Ensure full-screen centered overlay
+        el.style.position = 'fixed';
+        el.style.top = '0';
+        el.style.left = '0';
+        el.style.width = '100vw';
+        el.style.height = '100vh';
+        el.style.display = 'flex';
+        el.style.alignItems = 'center';
+        el.style.justifyContent = 'center';
+        el.style.zIndex = '9999';
+        // Optional backdrop if needed
+        if (!el.style.backgroundColor) {
+          el.style.backgroundColor = 'rgba(255,255,255,0.7)';
+        }
+      } else {
+        el.style.display = 'none';
+      }
+    } else {
+      var current = window.getComputedStyle(el).display;
+      if (current === 'none') {
+        // Show with centered styles
+        el.style.position = 'fixed';
+        el.style.top = '0';
+        el.style.left = '0';
+        el.style.width = '100vw';
+        el.style.height = '100vh';
+        el.style.display = 'flex';
+        el.style.alignItems = 'center';
+        el.style.justifyContent = 'center';
+        el.style.zIndex = '9999';
+        if (!el.style.backgroundColor) {
+          el.style.backgroundColor = 'rgba(255,255,255,0.7)';
+        }
+      } else {
+        el.style.display = 'none';
+      }
+    }
+  } catch (e) {}
+}
 
 const rippleBtns = document.getElementsByClassName("ripple");
 
@@ -807,7 +854,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Include current language for backend localization
         formData.append('lang', getCurrentLang());
         // Show preloader while request is running
-        if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
+        togglePreloader(true);
         fetch(form.action, {
             method: 'POST',
             headers: {
@@ -840,7 +887,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .finally(() => {
             // Hide preloader when request completes
-            if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
+            togglePreloader(false);
         });
     });
 
@@ -913,7 +960,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Include current language for backend localization
             formData.append('lang', getCurrentLang());
             // Show preloader while request is running
-            if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
+            togglePreloader(true);
             fetch(employmentForm.action, {
                 method: 'POST',
                 headers: {
@@ -966,7 +1013,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .finally(() => {
                 // Hide preloader when request completes
-                if (window.jQuery) { jQuery('.preloader').fadeToggle(); }
+                togglePreloader(false);
             });
         });
     }
