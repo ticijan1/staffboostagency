@@ -160,7 +160,7 @@
                     <img src="{{ asset('landing/assets/img/icons/footer-icon1.png') }}" alt="">
                 </div>
                 <div class="pera">
-                    <a href="tel:+880123456789">+880 123 456 789</a>
+                    <a data-i18n="contact_box_one_link" href="https://wa.me/35677771169?text=Hello%20Staff%20Boost%20Agency" target="_blank" rel="noopener" aria-label="Open WhatsApp chat">Click here - WhatsApp</a>
                 </div>
             </div>
             <div class="contact-box">
@@ -168,17 +168,17 @@
                     <img src="{{ asset('landing/assets/img/icons/footer-icon2.png') }}" alt="">
                 </div>
                 <div class="pera">
-                    <a href="mailto:info@mail.com">info@mail.com</a>
+                    <a href="mailto:info@staffboostagency.com">info@staffboostagency.com</a>
                 </div>
             </div>
-            <div class="contact-box">
+            <!-- <div class="contact-box">
                 <div class="icon">
                     <img src="{{ asset('landing/assets/img/icons/footer-icon3.png') }}" alt="">
                 </div>
                 <div class="pera">
                     <a href="tel:+880123456789">8502 Preston Rd. <br> Inglewoo Maine 98380</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="contact-infos">
             <h3 data-i18n="header_social_media">Social Media</h3>
