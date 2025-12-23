@@ -13,3 +13,6 @@ Route::get('/sitemap.xml', function () {
     return response()->view('sitemap', compact('lastmod'))
         ->header('Content-Type', 'application/xml');
 });
+Route::get('/zohoverify/verifyforzoho.html', function () {
+    return '68425475';
+});
