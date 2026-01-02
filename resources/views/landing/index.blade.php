@@ -77,7 +77,7 @@
     </script>
 
     <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="{{ asset('landing/assets/img/logo/titel1.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('landing/assets/img/logo/titel1_32x32.png') }}" type="image/x-icon">
 
     <!--=====CSS=======-->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/bootstrap.min.css') }}">
